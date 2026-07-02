@@ -6,9 +6,14 @@ function calcular() {
     
     // Calcular disponible
     let disponible = calcularDisponible(ingresos, egresos);
+    let capacidadPago = calcularCapacidadPago(disponible);
     
     // Mostrar en pantalla
     document.getElementById("lblDisponibleValor").textContent = 
         "USD " + disponible.toFixed(2);
-        console.log();
+
+
+    document.getElementById("lblCapacidadPago").textContent = 
+        "USD " + capacidadPago.toFixed(2);
+        
 }
