@@ -11,7 +11,7 @@ function calcular() {
     let disponible = calcularDisponible(ingresos, egresos);
     let capacidadPago = calcularCapacidadPago(disponible);
     let interesApagar = calcularInteresSimple(monto, tasa, plazoAnios);
-
+    let totalPrestamo = calcularTotalPrestamo(monto, interesApagar);
 
     // Mostrar en pantalla
     document.getElementById("lblDisponibleValor").textContent = 
@@ -23,5 +23,6 @@ function calcular() {
     document.getElementById("spnInteresApagar").textContent =
         "USD" + interesApagar.toFixed(2);
 
-  
+    document.getElementById("spnTotalPrestamo").textContent =
+        "USD" + totalPrestamo.toFixed(2);
 }

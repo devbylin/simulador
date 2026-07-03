@@ -22,3 +22,6 @@ function calcularInteresSimple(monto, tasa, plazoAnios){
     return monto * (tasa / 100) * plazoAnios;
     
 }
+function calcularTotalPrestamo(monto, interes) {
+    return monto + interes + 100;
+}
