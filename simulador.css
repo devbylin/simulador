@@ -1,70 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
+
+:root {
+    --primary: #0A2463;
+    --green: #2E9E6B;
+    --bg: #F4F7FA;
+    --card: #FFFFFF;
+    --text: #1E2A3A;
+    --light-text: #6B7A8D;
+    --border: #DCE3EB;
+}
+
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+}
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f6f8;
-    margin: 0;
-    padding: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
 }
 
-.container {
-    width: 400px;
-    margin: 40px auto;
+.main-container {
+    max-width: 1000px;
+    margin: 0 auto;
     padding: 20px;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-h1 {
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0 30px;
+    border-bottom: 1px solid var(--border);
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo { height: 65px; }
+
+.brand-name {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.brand-subtitle {
+    font-size: 1rem;
+    color: var(--green);
+    font-weight: 600;
+}
+
+/* Contenido Principal */
+.main-content {
+    background: var(--card);
+    padding: 40px;
+    border-radius: 22px;
+    box-shadow: 0 10px 35px rgba(0,0,0,0.08);
+}
+
+.main-title {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 2.4rem;
+    color: var(--primary);
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 35px;
 }
 
-h2 {
-    margin-top: 20px;
-    font-size: 18px;
+.form-section {
+    margin-bottom: 40px;
 }
 
 label {
     display: block;
-    margin-top: 10px;
-    font-weight: bold;
+    margin: 18px 0 8px;
+    font-weight: 600;
+    color: var(--light-text);
 }
 
-input {
+input[type="text"] {
     width: 100%;
-    padding: 8px;
-    margin-top: 5px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
+    padding: 14px 18px;
+    border: 2px solid var(--border);
+    border-radius: 12px;
+    font-size: 1.1rem;
 }
 
-p {
-    margin-top: 10px;
+input[type="text"]:focus {
+    border-color: var(--primary);
+    outline: none;
 }
 
-span {
+/* Slider */
+.slider-container {
+    margin: 24px 0;
+}
+
+.slider-value {
+    text-align: right;
+    font-weight: 700;
+    color: var(--primary);
+    margin-top: 6px;
+}
+
+/* Resultados */
+.highlight {
+    color: var(--green);
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+.results-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+    margin: 25px 0;
+}
+
+.result-card {
+    background: #F8FAFC;
+    padding: 18px;
+    border-radius: 16px;
+    text-align: center;
+    border: 1px solid var(--border);
+}
+
+.big-value {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--primary);
+    display: block;
+    margin-top: 6px;
+}
+
+/* Status */
+.status {
     font-weight: bold;
-    color: #2c3e50;
+    padding: 8px 20px;
+    border-radius: 9999px;
+    display: inline-block;
 }
 
+.success { 
+    background: #DCFCE7; 
+    color: var(--green); 
+}
+
+/* Buttons */
 .buttons {
-    margin-top: 20px;
     display: flex;
-    justify-content: space-between;
+    gap: 16px;
+    margin-top: 30px;
 }
 
-button {
-    width: 48%;
-    padding: 10px;
+.buttons button {
+    flex: 1;
+    padding: 16px;
     border: none;
-    border-radius: 5px;
-    background-color: #3498db;
-    color: white;
-    font-weight: bold;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    font-weight: 600;
     cursor: pointer;
 }
 
-button:hover {
-    background-color: #2980b9;
+#btnCalcularCredito {
+    background: var(--primary);
+    color: white;
+}
+
+#btnReiniciar {
+    background: #e2e8f0;
+    color: var(--text);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .main-content {
+        padding: 25px;
+    }
+    .main-title {
+        font-size: 2rem;
+    }
 }

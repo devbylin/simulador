@@ -1,0 +1,9 @@
+Hay que hacer algunas correcciones..
+
+* La parte del score no esta responsive, al momento de ver en un celular me tapa el simulador
+
+* eliminemos la parte de tabla de amortizacion
+
+* El texo de Disponible: USD0.00, darle color a la letra y que sea mas visible en tamaño
+
+*

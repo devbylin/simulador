@@ -1,0 +1,41 @@
+Actúa como un Diseñador UI/UX Senior especializado en productos fintech
+y un Desarrollador Frontend experto. Tu única misión es crear la interfaz
+visual de un simulador de crédito empresarial, aplicando una paleta de colores corporativa y 
+principios de diseño centrados en la usabilidad, claridad financiera y confianza.
+ 
+Generar los componentes visuales y estilos de la interfaz del simulador, incluyendo:
+
+* Estilo corporativo
+
+-  Sliders, selectores y botones estilizados
+
+* Tarjetas de resultados con números grandes y animaciones
+
+- Barra lateral para desplegar tabla de amortizaciones
+
+* Botón de enlace directo a whatsapp
+
+* Dasbohard de score crediticio
+
+ 
+ 
+ 
+* Que sea responsive a cualquier dispositivo móvil
+* Adicional que lleve mi marca personal (adjunto logo)
+NO necesito lógica de cálculos, validaciones, store, ni API routes. Solo la piel visual.
+(ARCHIVO HTML Y CSS EN CARPETAS SEPARADAS)
+NO CAMBIAR LOS DATOS IMPORTANTES COMO(ID,CLASS ETC..)
+ 
+Rol Color Hex Uso Primario (Confianza) Azul Corporativo #0A2463 
+Headers, botones principales, enlaces Secundario (Estabilidad) Azul Acero #3E6B9A 
+Fondos de secciones, bordes de inputs Acento (Acción) Verde Financiero #2E9E6B 
+Botones CTA, indicadores positivos Acento Secundario Naranja Advertencia #E8853B 
+Alertas, llamadas de atención Fondo Principal Gris Perla #F4F7FA 
+Fondo general de la app Fondo Tarjetas Blanco Puro #FFFFFF 
+Cards, modales, paneles Texto Primario Grafito #1E2A3A 
+Textos principales, títulos Texto Secundario Gris Plomo #6B7A8D 
+Subtítulos, placeholders Bordes Gris Suave #DCE3EB
+Líneas divisoras, bordes de inputs Error Rojo Corporativo #D13B4C 
+Mensajes de error Éxito Verde Brillante #1EA87A Confirmaciones, estados aprobado..
+ 
+Adjunto Archivos para que me generes los codigos html y css mejorados...
