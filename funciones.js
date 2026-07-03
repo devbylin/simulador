@@ -23,5 +23,10 @@ function calcularInteresSimple(monto, tasa, plazoAnios){
     
 }
 function calcularTotalPrestamo(monto, interes) {
+
     return monto + interes + 100;
+}
+function calcularCuotaMensual(totalPrestamo, plazoAnios) {
+    if (plazoAnios <= 0) return 0;
+    return totalPrestamo / (plazoAnios * 12);
 }
